@@ -141,11 +141,7 @@ Localhost and GitHub Pages have separate browser storage. Clearing browser data 
 
 Use the same topic and team as the Endterm. Publish this folder's contents to the existing repository root and enable GitHub Pages from main/root. Check all navigation, sign-in, theme, FAQ and API on the deployed site. Submit links individually in LMS before its deadline. Do not commit after the deadline. This repository contains the final source. GitHub Pages must be enabled separately in Settings → Pages.
 
-The original contribution table above describes Midterm/Endterm work. The final additions were prepared with AI assistance for group review. Suggested defence roles and simple technical questions are in `docs/DEFENSE_RU_EN.md`; the team should confirm its actual final responsibilities before submission.
-
-### AI acknowledgement
-
-ChatGPT assisted with final code, documentation and testing. Team members must review, understand and explain the submitted work. This acknowledgement is also displayed in every page footer and included in the report.
+The original contribution table above describes Midterm/Endterm work. Suggested defence roles and simple technical questions are in `docs/DEFENSE_RU_EN.md`; the team should confirm its actual final responsibilities before submission.
 
 ### Credits
 

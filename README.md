@@ -129,11 +129,5 @@ tests/
 README.md
 ```
 
-## Credits
-
-- Anime data: [Kitsu API](https://kitsu.docs.apiary.io/).
-- Interface framework: [Bootstrap](https://getbootstrap.com/).
-- Animations and interactions: [jQuery](https://jquery.com/).
-- Anime and manga artwork belongs to its respective creators and rights holders.
 
 AniVerse is a fan information website and does not host episodes or manga chapters.

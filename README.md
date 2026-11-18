@@ -9,6 +9,8 @@
 
 **Repository:** https://github.com/Meirhan35/anime-manga
 
+**Website:** https://meirhan35.github.io/anime-manga/
+
 ## Description
 
 AniVerse is a responsive website for anime and manga fans. Users can explore anime, read about manga, view posters and manage a watchlist. The website has a purple colour scheme with light and dark themes.

@@ -9,140 +9,131 @@
 
 **Repository:** https://github.com/Meirhan35/anime-manga
 
-**Original Endterm repository:** https://github.com/Tilya1/Midterm-WEB
-
-**GitHub Pages:** enable main/root in repository Settings → Pages to publish at https://meirhan35.github.io/anime-manga/
-
 ## Description
 
-AniVerse is a multi-page responsive website for anime and manga fans. Users can see popular anime, read about manga, check the top rating and look at the gallery. The website has a black and purple theme.
+AniVerse is a responsive website for anime and manga fans. Users can explore anime, read about manga, view posters and manage a watchlist. The website has a purple colour scheme with light and dark themes.
 
-For the endterm we added JavaScript and jQuery: a registration form with validation, search and filter on the anime catalog, a watchlist table with add / edit / delete, and a lightbox for the gallery.
+The final project includes saved theme preferences, sign-in and sign-out, an animated FAQ and anime search using the Kitsu API.
 
 ## Pages
 
-1. **Home** (`index.html`) — welcome block and popular anime cards
-2. **Anime** (`anime.html`) — catalog of 11 anime with search and genre filter
-3. **Manga** (`manga.html`) — manga list with authors and genres
-4. **Top** (`top.html`) — rating table of the best anime and the Watchlist table (CRUD)
-5. **Gallery** (`gallery.html`) — posters with caption on hover and a lightbox
-6. **Register** (`register.html`) — registration form with validation
+1. **Home** (`index.html`) — welcome section, popular anime and FAQ.
+2. **Anime** (`anime.html`) — live API search, curated anime cards and genre filters.
+3. **Manga** (`manga.html`) — manga descriptions, authors and genres.
+4. **Top** (`top.html`) — anime ranking and Watchlist table.
+5. **Gallery** (`gallery.html`) — posters with captions and a lightbox.
+6. **Register** (`register.html`) — registration form validation.
+7. **Sign in** (`signin.html`) — demo sign-in with a personalised interface.
 
 ## Features implemented
 
-### Midterm (HTML, CSS, Bootstrap)
+### HTML and CSS
 
-- Navigation bar on all pages (`<header>` with logo and menu, made with **Flexbox**)
-- Semantic tags: `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`
-- Headings, paragraphs, lists (`ul`, `ol`), links and images
-- **Table** — top anime rating (`top.html`)
-- **External CSS** — `css/style.css`, class selectors
-- **Box model** — margin, padding, border
-- **Flexbox** — header, navigation, manga items
-- **Grid** — anime catalog and gallery
-- **Positioning** — `position: relative` + `absolute` for gallery captions
-- `:hover` effects on links, buttons, cards and gallery
-- **Media queries** for tablet (992px) and mobile (576px)
-- **Bootstrap** grid (`container`, `row`, `col-12 col-md-6 col-lg-4`)
+- Semantic HTML5 elements: `header`, `nav`, `main`, `section` and `footer`.
+- Shared navigation and consistent styling across all pages.
+- External CSS files, Flexbox and Grid layouts.
+- Bootstrap grid and form styling.
+- Responsive layouts for desktop, tablet and mobile.
+- Hover effects, visible keyboard focus and a skip-to-content link.
 
-### Endterm (JavaScript and jQuery, `js/script.js`)
+### Light and Dark Theme
 
-**1. Form validation** (`register.html`)
-- Required checks for name, email, password and confirm password
-- Email is checked with a RegEx: `/^[^\s@]+@[^\s@]+\.[^\s@]+$/`
-- Password strength bar: **Weak** (red), **Medium** (yellow), **Strong** (green)
-- Confirm password must be the same as the password
-- Real-time feedback while typing: Bootstrap `is-valid` / `is-invalid` (green check or red text)
-- On submit with errors the form is not sent and a red Bootstrap alert appears; with correct data a green alert appears
+- A theme button switches between light and dark colours.
+- The selected theme is saved in `localStorage`.
+- The theme remains active after refreshing or moving between pages.
 
-**2. Search and filter** (`anime.html`)
-- Search bar filters anime cards while typing (`.on("keyup")`)
-- Buttons **All / Action / Adventure / Sports** filter by genre
-- Search and genre buttons work together, search is case-insensitive
-- If nothing is found, the text "No anime found." is shown
+### Sign-in and Sign-out
 
-**3. Watchlist table — CRUD** (`top.html`)
-- **Create:** fill the form and press Add
-- **Read:** the table is built from a JavaScript array
-- **Update:** press Edit, the data goes to the form, change it and press Save
-- **Delete:** press Delete and confirm in the `confirm()` window
+- The sign-in form validates a display name and email.
+- Demo user details are saved in `localStorage`.
+- The header displays the saved name after refresh.
+- Sign-out clears the saved login state.
+- This is a browser-only demonstration; no server account or password is stored.
 
-**4. Gallery lightbox** (`gallery.html`)
-- Pictures appear one by one with `.fadeIn()`
-- Click on a picture opens it big in a dark lightbox
-- Arrows ❮ ❯ go to the previous / next picture with `.fadeOut()` and `.fadeIn()`
-- The caption appears with `.animate()`
-- Close with × or by clicking on the dark background
+### Registration Form Validation
+
+- Required checks for name, email, password and password confirmation.
+- Email format validation and matching password checks.
+- Password strength indicator and feedback while typing.
+- Success and error messages.
+
+### Anime Search and API
+
+- The Discover section uses `fetch()` to request JSON data from the Kitsu API.
+- Users can search by title and select an anime format.
+- Results display posters, titles, descriptions, episode counts and ratings out of 100.
+- Loading, empty-result and error messages provide feedback.
+- Repeated searches use a temporary cache.
+- The curated catalogue also supports local search and genre filtering.
+
+### Watchlist CRUD
+
+- **Create:** add an anime title, genre and episode count.
+- **Read:** display saved entries in a table.
+- **Update:** edit an existing entry.
+- **Delete:** remove an entry after confirmation.
+- Watchlist entries are saved in `localStorage` and remain after refresh.
+
+### FAQ
+
+- Six questions about the website and anime.
+- Answers open and close with jQuery `.slideToggle()`.
+- Plus and minus indicators show the expanded state.
+
+### Gallery Lightbox
+
+- Clicking a poster opens a larger image.
+- Buttons and arrow keys move between posters.
+- Escape closes the lightbox.
+- jQuery animations display images and captions.
 
 ## Technologies used
 
 - HTML5
-- CSS3 (external file `css/style.css`)
-- Bootstrap 5.3
+- CSS3
+- Bootstrap 5.3.3
 - JavaScript
 - jQuery 3.7.1
-- GitHub Pages
+- Kitsu API
+- localStorage
 
 ## Individual contribution
 
-| Member | Midterm | Endterm |
-|---|---|---|
-| Zhumagaliyev Aktilek | Home page, Top page (table), header and footer, GitHub Pages | Registration form validation, Watchlist CRUD table, README |
-| Babassov Alibek | Anime page (Grid catalog), Manga page (lists) | Search bar and genre filter on the Anime page |
-| Meiirkhan Abilda | Gallery page (positioning, hover captions), media queries | Gallery lightbox with arrows and fade effects |
+| Member | Contribution |
+|---|---|
+| Zhumagaliyev Aktilek | Home and Top pages, shared header and footer, registration validation, Watchlist CRUD and README. |
+| Babassov Alibek | Anime and Manga pages, catalogue search and genre filtering. |
+| Meiirkhan Abilda | Gallery page, responsive media queries, lightbox navigation and animations. |
 
 ## Project structure
 
-```
+```text
 index.html
 anime.html
 manga.html
 top.html
 gallery.html
 register.html
-css/style.css
-js/script.js
+signin.html
+css/
+  style.css
+  final.css
+js/
+  script.js
+  theme.js
+  final.js
 images/
+vendor/
+docs/
+tests/
 README.md
 ```
 
+## Credits
 
+- Anime data: [Kitsu API](https://kitsu.docs.apiary.io/).
+- Interface framework: [Bootstrap](https://getbootstrap.com/).
+- Animations and interactions: [jQuery](https://jquery.com/).
+- Anime and manga artwork belongs to its respective creators and rights holders.
 
-## Final project additions
-
-- Seven HTML pages, shared navigation, responsive desktop/tablet/mobile layouts.
-- Light/Dark theme saved in localStorage and applied before page paint.
-- `signin.html`: validated browser-only name/email sign-in, persistent interface and sign-out. No passwords or server accounts.
-- Six FAQ questions on Home, jQuery `.slideToggle()`, plus/minus indicators and expanded state.
-- Real Kitsu API search on Anime, optional format filter, JSON parsing, dynamic cards, loading, empty, timeout, HTTP 429 and network error states. Results are cached in memory for the current page visit. Ratings are out of 100. Jikan was unavailable during local development, so Kitsu is used.
-- Original Endterm search, registration validation, gallery and Watchlist are retained. Watchlist now survives refresh and uses escaped text when rendering saved entries.
-- Keyboard support in the gallery and skip links.
-- Local Bootstrap 5.3.3 and jQuery 3.7.1 files in `vendor/`.
-
-### Run locally in VS Code
-
-Open this folder, choose Terminal → New Terminal and run:
-
-```sh
-python3 -m http.server 5500 --bind 127.0.0.1
-```
-
-Open http://127.0.0.1:5500/ . Stop with Ctrl+C. You can also use the Run AniVerse task in Terminal → Run Task. No npm installation, database, API key or backend is required. Live API search and remote API posters require internet access.
-
-### Storage
-
-- `aniverse.theme`: `light` or `dark`.
-- `aniverse.user`: JSON object with demo name and email.
-- `aniverse.watchlist`: shared browser Watchlist array. Sign-out does not erase it.
-
-Localhost and GitHub Pages have separate browser storage. Clearing browser data resets saved settings. Static ranking values are editorial picks, not live ratings.
-
-### Final submission
-
-Use the same topic and team as the Endterm. Publish this folder's contents to the existing repository root and enable GitHub Pages from main/root. Check all navigation, sign-in, theme, FAQ and API on the deployed site. Submit links individually in LMS before its deadline. Do not commit after the deadline. This repository contains the final source. GitHub Pages must be enabled separately in Settings → Pages.
-
-The original contribution table above describes Midterm/Endterm work. Suggested defence roles and simple technical questions are in `docs/DEFENSE_RU_EN.md`; the team should confirm its actual final responsibilities before submission.
-
-### Credits
-
-Kitsu API: https://kitsu.docs.apiary.io/ . Bootstrap: https://getbootstrap.com/ . jQuery: https://jquery.com/ . Anime and manga artwork belongs to its respective creators and rights holders. AniVerse does not host episodes or manga chapters.
+AniVerse is a fan information website and does not host episodes or manga chapters.

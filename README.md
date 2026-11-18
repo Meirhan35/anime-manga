@@ -7,8 +7,6 @@
 - Babassov Alibek
 - Meiirkhan Abilda
 
-**Repository:** https://github.com/Meirhan35/anime-manga
-
 **Website:** https://meirhan35.github.io/anime-manga/
 
 ## Description

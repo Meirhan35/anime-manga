@@ -14,7 +14,7 @@ The Anime page has two ways to find anime. The curated catalogue uses local sear
 
 ### Meiirkhan 120 to 180 seconds
 
-The gallery opens posters in a lightbox. We can move between images with buttons or arrow keys and close it with Escape. The Home page has six FAQ questions. When a question is clicked, jQuery slideToggle opens or closes the answer. The plus and minus indicators change too. Our watchlist supports adding, reading, editing and deleting records. We now save it in localStorage, so entries remain after refresh. The layout uses Grid, Flexbox and media queries. AI helped us with the final code, documentation and testing, and we acknowledge this on the website and in our report. Thank you.
+The gallery opens posters in a lightbox. We can move between images with buttons or arrow keys and close it with Escape. The Home page has six FAQ questions. When a question is clicked, jQuery slideToggle opens or closes the answer. The plus and minus indicators change too. Our watchlist supports adding, reading, editing and deleting records. We now save it in localStorage, so entries remain after refresh. The layout uses Grid, Flexbox and media queries. Thank you.
 
 ## Questions and simple answers
 

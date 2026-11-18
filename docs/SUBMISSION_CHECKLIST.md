@@ -7,7 +7,7 @@
 - Validated demo sign-in, persistent user interface and sign-out.
 - Six FAQ questions with jQuery slideToggle and plus/minus indicators.
 - Kitsu API search, format selection, JSON processing, dynamic cards and error handling.
-- Group report, original contribution records, proposed defence roles and AI acknowledgement.
+- Group report, original contribution records, proposed defence roles.
 - Watchlist persistence and safe text rendering.
 
 ## Before submission

@@ -145,4 +145,4 @@ The original contribution table above describes Midterm/Endterm work. Suggested 
 
 ### Credits
 
-Kitsu API: https://kitsu.docs.apiary.io/ . Bootstrap: https://getbootstrap.com/ . jQuery: https://jquery.com/ . Original fan artwork is retained from the Endterm repository and belongs to the respective rights holders. AniVerse does not host episodes or manga chapters.
+Kitsu API: https://kitsu.docs.apiary.io/ . Bootstrap: https://getbootstrap.com/ . jQuery: https://jquery.com/ . Anime and manga artwork belongs to its respective creators and rights holders. AniVerse does not host episodes or manga chapters.

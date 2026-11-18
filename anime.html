@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniVerse - Anime</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/final.css">
+</head>
+<body>
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpg" alt="AniVerse logo">
+            <span>AniVerse</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="anime.html" class="active" aria-current="page">Anime</a>
+            <a href="manga.html">Manga</a>
+            <a href="top.html">Top</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="register.html">Register</a>
+        </nav>
+        <div class="header-actions"><button id="themeToggle" type="button" class="utility-btn">☀ Light</button><a href="signin.html" id="signInLink" class="utility-btn">Sign in</a><span id="userName"></span><button id="signOut" type="button" class="utility-btn" hidden>Sign out</button></div>
+    </header>
+    <p id="siteNotice" class="site-notice" role="status"></p>
+
+    <main id="mainContent">
+        <div class="container">
+            <section class="discover-section mb-5" aria-labelledby="discoverTitle">
+    <p class="eyebrow">BEYOND OUR PICKS</p><h2 id="discoverTitle">Discover anime</h2>
+    <p>Search the live anime catalogue through Kitsu. Find a new story to get into.</p>
+    <form id="apiForm" class="api-search">
+        <div><label for="apiQuery">Anime title</label><input id="apiQuery" class="form-control" type="search" placeholder="Try Naruto or One Piece" minlength="2" maxlength="100" required></div>
+        <div><label for="apiType">Format</label><select id="apiType" class="form-select"><option value="">All formats</option><option value="TV">TV series</option><option value="movie">Movie</option><option value="OVA">OVA</option></select></div>
+        <button id="apiSearchButton" type="submit" class="btn-anime">Search online ↗</button>
+    </form>
+    <p id="apiStatus" role="status" class="mt-3">Enter a title and press Search online. Internet connection required.</p>
+    <div id="apiResults" class="anime-grid" aria-busy="false"></div>
+    <p class="source-credit">Data: <a href="https://kitsu.docs.apiary.io/" target="_blank" rel="noopener noreferrer">Kitsu API</a>. AniVerse is an independent fan project.</p>
+</section><h1 class="title">Anime Catalog</h1>
+            <p class="mb-4">All anime on our website. Choose your next favourite!</p>
+
+            <div class="search-box mb-4">
+                <input type="text" id="searchInput" class="form-control mb-3" placeholder="Search anime...">
+                <button class="filter-btn active" data-genre="All">All</button>
+                <button class="filter-btn" data-genre="Action">Action</button>
+                <button class="filter-btn" data-genre="Adventure">Adventure</button>
+                <button class="filter-btn" data-genre="Sports">Sports</button>
+            </div>
+            <p id="noResults" class="no-results">No anime found.</p>
+
+
+            <div class="anime-grid" id="animeList">
+                    <div class="anime-card">
+                    <img src="images/one-piece.jpg" alt="One Piece">
+                    <div class="info">
+                        <h3 class="h5">One Piece</h3>
+                        <span class="genre">Adventure</span>
+                        <p class="mt-2">Luffy and his crew search for the One Piece treasure.</p>
+                    </div>
+                </div>
+                    <div class="anime-card">
+                    <img src="images/naruto.jpg" alt="Naruto">
+                    <div class="info">
+                        <h3 class="h5">Naruto</h3>
+                        <span class="genre">Action</span>
+                        <p class="mt-2">A young ninja dreams of becoming Hokage.</p>
+                    </div>
+                </div>
+                    <div class="anime-card">
+                    <img src="images/attack-on-titan.jpg" alt="Attack on Titan">
+                    <div class="info">
+                        <h3 class="h5">Attack on Titan</h3>
+                        <span class="genre">Dark Fantasy</span>
+                        <p class="mt-2">Humanity fights giant Titans behind the walls.</p>
+                    </div>
+                </div>
+                    <div class="anime-card">
+                    <img src="images/haikyuu.jpg" alt="Haikyuu!!">
+                    <div class="info">
+                        <h3 class="h5">Haikyuu!!</h3>
+                        <span class="genre">Sports</span>
+                        <p class="mt-2">A short boy wants to be a volleyball star.</p>
+                    </div>
+                </div>
+                    <div class="anime-card">
+                    <img src="images/blue-lock.jpg" alt="Blue Lock">
+                    <div class="info">
+                        <h3 class="h5">Blue Lock</h3>
+                        <span class="genre">Sports</span>
+                        <p class="mt-2">300 strikers fight to become the best in Japan.</p>
+                    </div>
+                </div>
+                    <div class="anime-card">
+                    <img src="images/solo-leveling.jpg" alt="Solo Leveling">
+                    <div class="info">
+                        <h3 class="h5">Solo Leveling</h3>
+                        <span class="genre">Action</span>
+                        <p class="mt-2">The weakest hunter becomes the strongest.</p>
+                    </div>
+                </div>
+                    <div class="anime-card">
+                    <img src="images/hunter-x-hunter.jpg" alt="Hunter x Hunter">
+                    <div class="info">
+                        <h3 class="h5">Hunter x Hunter</h3>
+                        <span class="genre">Adventure</span>
+                        <p class="mt-2">Gon becomes a Hunter to find his father.</p>
+                    </div>
+                </div>
+                    <div class="anime-card">
+                    <img src="images/dr-stone.jpg" alt="Dr. Stone">
+                    <div class="info">
+                        <h3 class="h5">Dr. Stone</h3>
+                        <span class="genre">Sci-Fi</span>
+                        <p class="mt-2">Senku rebuilds the world with science.</p>
+                    </div>
+                </div>
+                    <div class="anime-card">
+                    <img src="images/death-note.jpg" alt="Death Note">
+                    <div class="info">
+                        <h3 class="h5">Death Note</h3>
+                        <span class="genre">Thriller</span>
+                        <p class="mt-2">A notebook that can kill anyone.</p>
+                    </div>
+                </div>
+                    <div class="anime-card">
+                    <img src="images/jujutsu-kaisen.jpg" alt="Jujutsu Kaisen">
+                    <div class="info">
+                        <h3 class="h5">Jujutsu Kaisen</h3>
+                        <span class="genre">Action</span>
+                        <p class="mt-2">Yuji fights curses with jujutsu sorcerers.</p>
+                    </div>
+                </div>
+                    <div class="anime-card">
+                    <img src="images/vinland-saga.jpg" alt="Vinland Saga">
+                    <div class="info">
+                        <h3 class="h5">Vinland Saga</h3>
+                        <span class="genre">Historical</span>
+                        <p class="mt-2">A young Viking looks for revenge and peace.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>AniVerse · Student fan project</p>
+        <p>Authors: Zh.Aktilek B.Alibek A.Meiirkhan</p>
+        <p class="credits">AI assistance: ChatGPT helped with code, documentation and testing. Team members are responsible for understanding and reviewing the project. Artwork belongs to its respective owners.</p>
+    </footer>
+
+    <script src="vendor/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/final.js"></script>
+
+</body>
+</html>

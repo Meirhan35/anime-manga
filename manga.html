@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniVerse - Manga</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/final.css">
+</head>
+<body>
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpg" alt="AniVerse logo">
+            <span>AniVerse</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="anime.html">Anime</a>
+            <a href="manga.html" class="active" aria-current="page">Manga</a>
+            <a href="top.html">Top</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="register.html">Register</a>
+        </nav>
+        <div class="header-actions"><button id="themeToggle" type="button" class="utility-btn">☀ Light</button><a href="signin.html" id="signInLink" class="utility-btn">Sign in</a><span id="userName"></span><button id="signOut" type="button" class="utility-btn" hidden>Sign out</button></div>
+    </header>
+    <p id="siteNotice" class="site-notice" role="status"></p>
+
+    <main id="mainContent">
+        <div class="container">
+            <h1 class="title">Manga</h1>
+            <p class="mb-4">Manga is a Japanese comic. Many anime are made from manga.</p>
+
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="manga-item">
+                        <img src="images/one-piece.jpg" alt="One Piece">
+                        <div>
+                            <h3 class="h5">One Piece</h3>
+                            <p>Author: Eiichiro Oda</p>
+                            <p>Start: 1997</p>
+                            <p>Chapters: <span class="genre">1100+</span></p>
+                        </div>
+                    </div>
+                    <div class="manga-item">
+                        <img src="images/naruto.jpg" alt="Naruto">
+                        <div>
+                            <h3 class="h5">Naruto</h3>
+                            <p>Author: Masashi Kishimoto</p>
+                            <p>Start: 1999</p>
+                            <p>Chapters: <span class="genre">700</span></p>
+                        </div>
+                    </div>
+                    <div class="manga-item">
+                        <img src="images/attack-on-titan.jpg" alt="Attack on Titan">
+                        <div>
+                            <h3 class="h5">Attack on Titan</h3>
+                            <p>Author: Hajime Isayama</p>
+                            <p>Start: 2009</p>
+                            <p>Chapters: <span class="genre">139</span></p>
+                        </div>
+                    </div>
+                    <div class="manga-item">
+                        <img src="images/hunter-x-hunter.jpg" alt="Hunter x Hunter">
+                        <div>
+                            <h3 class="h5">Hunter x Hunter</h3>
+                            <p>Author: Yoshihiro Togashi</p>
+                            <p>Start: 1998</p>
+                            <p>Chapters: <span class="genre">400+</span></p>
+                        </div>
+                    </div>
+                    <div class="manga-item">
+                        <img src="images/vinland-saga.jpg" alt="Vinland Saga">
+                        <div>
+                            <h3 class="h5">Vinland Saga</h3>
+                            <p>Author: Makoto Yukimura</p>
+                            <p>Start: 2005</p>
+                            <p>Chapters: <span class="genre">200+</span></p>
+                        </div>
+                    </div>
+                    <div class="manga-item">
+                        <img src="images/death-note.jpg" alt="Death Note">
+                        <div>
+                            <h3 class="h5">Death Note</h3>
+                            <p>Author: Tsugumi Ohba</p>
+                            <p>Start: 2003</p>
+                            <p>Chapters: <span class="genre">108</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="form-box">
+                        <h3 class="h5 title">Manga Genres</h3>
+                        <ol>
+                            <li>Shonen</li>
+                            <li>Seinen</li>
+                            <li>Shojo</li>
+                            <li>Sports</li>
+                            <li>Fantasy</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>AniVerse · Student fan project</p>
+        <p>Authors: Zh.Aktilek B.Alibek A.Meiirkhan</p>
+        <p class="credits">AI assistance: ChatGPT helped with code, documentation and testing. Team members are responsible for understanding and reviewing the project. Artwork belongs to its respective owners.</p>
+    </footer>
+
+    <script src="vendor/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/final.js"></script>
+
+</body>
+</html>

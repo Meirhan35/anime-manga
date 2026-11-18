@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniVerse - Home</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/final.css">
+</head>
+<body>
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpg" alt="AniVerse logo">
+            <span>AniVerse</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="anime.html">Anime</a>
+            <a href="manga.html">Manga</a>
+            <a href="top.html">Top</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="register.html">Register</a>
+        </nav>
+        <div class="header-actions"><button id="themeToggle" type="button" class="utility-btn">☀ Light</button><a href="signin.html" id="signInLink" class="utility-btn">Sign in</a><span id="userName"></span><button id="signOut" type="button" class="utility-btn" hidden>Sign out</button></div>
+    </header>
+    <p id="siteNotice" class="site-notice" role="status"></p>
+
+    <main id="mainContent">
+        <div class="container">
+            <section class="hero text-center mb-5">
+                <p class="eyebrow">YOUR NEXT STORY STARTS HERE</p><h1>Welcome to <span class="title">AniVerse</span></h1>
+                <p class="mt-3 mb-4">The best place for anime and manga fans. Find new anime, read about manga and join our community!</p>
+                <a href="anime.html" class="btn-anime">Explore anime →</a> <a href="top.html" class="utility-btn">My watchlist</a>
+            </section>
+
+            <p id="memberWelcome" class="member-welcome"></p>
+            <section>
+                <h2 class="title">Popular Now</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="anime-card">
+                        <img src="images/one-piece.jpg" alt="One Piece">
+                        <div class="info">
+                            <h3 class="h5">One Piece</h3>
+                            <span class="genre">Adventure</span>
+                            <p class="mt-2">Luffy and his crew search for the One Piece treasure.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="anime-card">
+                        <img src="images/naruto.jpg" alt="Naruto">
+                        <div class="info">
+                            <h3 class="h5">Naruto</h3>
+                            <span class="genre">Action</span>
+                            <p class="mt-2">A young ninja dreams of becoming Hokage.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="anime-card">
+                        <img src="images/attack-on-titan.jpg" alt="Attack on Titan">
+                        <div class="info">
+                            <h3 class="h5">Attack on Titan</h3>
+                            <span class="genre">Dark Fantasy</span>
+                            <p class="mt-2">Humanity fights giant Titans behind the walls.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-5">
+                <h2 class="title">Why AniVerse?</h2>
+                <ul>
+                    <li>Curated picks and live anime search</li>
+                    <li>Top rating table of the best anime</li>
+                    <li>Gallery with posters</li>
+                </ul>
+            </section>
+<section class="faq-section mt-5" aria-labelledby="faqTitle"><p class="eyebrow">A LITTLE HELP</p><h2 id="faqTitle">Frequently asked questions</h2><article class="faq-item"><h3><button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer0">What is AniVerse?<span class="faq-indicator" aria-hidden="true">+</span></button></h3><div id="faqAnswer0" class="faq-answer" style="display:none"><p>AniVerse is a student fan website for discovering anime and manga, viewing posters and keeping a watchlist.</p></div></article><article class="faq-item"><h3><button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer1">What is the difference between anime and manga?<span class="faq-indicator" aria-hidden="true">+</span></button></h3><div id="faqAnswer1" class="faq-answer" style="display:none"><p>Anime is animation. Manga is a comic or graphic novel. Some anime adapt stories first published as manga.</p></div></article><article class="faq-item"><h3><button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer2">Where do the live search results come from?<span class="faq-indicator" aria-hidden="true">+</span></button></h3><div id="faqAnswer2" class="faq-answer" style="display:none"><p>Our Discover search uses Kitsu, a public API for anime and manga information. It provides titles, posters, scores and descriptions.</p></div></article><article class="faq-item"><h3><button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer3">Can I watch full episodes here?<span class="faq-indicator" aria-hidden="true">+</span></button></h3><div id="faqAnswer3" class="faq-answer" style="display:none"><p>No. AniVerse is an information and discovery website. It does not host episodes or manga chapters.</p></div></article><article class="faq-item"><h3><button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer4">Will my theme and sign-in stay after refresh?<span class="faq-indicator" aria-hidden="true">+</span></button></h3><div id="faqAnswer4" class="faq-answer" style="display:none"><p>Yes. Your theme, demo sign-in and watchlist are saved in localStorage in this browser. Clearing browser data removes them.</p></div></article><article class="faq-item"><h3><button type="button" class="faq-question" aria-expanded="false" aria-controls="faqAnswer5">Why is the online search sometimes unavailable?<span class="faq-indicator" aria-hidden="true">+</span></button></h3><div id="faqAnswer5" class="faq-answer" style="display:none"><p>Kitsu needs an internet connection and has request limits. If it fails, read the error message, wait a little and search again.</p></div></article></section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>AniVerse · Student fan project</p>
+        <p>Authors: Zh.Aktilek B.Alibek A.Meiirkhan</p>
+        <p class="credits">AI assistance: ChatGPT helped with code, documentation and testing. Team members are responsible for understanding and reviewing the project. Artwork belongs to its respective owners.</p>
+    </footer>
+
+    <script src="vendor/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/final.js"></script>
+
+</body>
+</html>

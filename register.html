@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniVerse - Register</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/final.css">
+</head>
+<body>
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpg" alt="AniVerse logo">
+            <span>AniVerse</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="anime.html">Anime</a>
+            <a href="manga.html">Manga</a>
+            <a href="top.html">Top</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="register.html" class="active" aria-current="page">Register</a>
+        </nav>
+        <div class="header-actions"><button id="themeToggle" type="button" class="utility-btn">☀ Light</button><a href="signin.html" id="signInLink" class="utility-btn">Sign in</a><span id="userName"></span><button id="signOut" type="button" class="utility-btn" hidden>Sign out</button></div>
+    </header>
+    <p id="siteNotice" class="site-notice" role="status"></p>
+
+    <main id="mainContent">
+        <div class="container">
+            <h1 class="title">Join AniVerse</h1>
+            <p class="mb-4">Practise registration form validation. This demo does not create a server account or save passwords. <a class="text-link" href="signin.html">Use demo sign-in →</a></p>
+
+            <form id="registerForm" class="form-box" novalidate>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-control">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control">
+                    <div class="invalid-feedback">Please enter a correct email, for example name@mail.com</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" class="form-control">
+                    <div class="invalid-feedback">Password must have at least 6 characters.</div>
+                    <div class="strength-bar"><div id="strengthFill"></div></div>
+                    <p id="strengthText" class="strength-text"></p>
+                </div>
+
+                <div class="mb-3">
+                    <label for="confirm" class="form-label">Confirm Password</label>
+                    <input type="password" id="confirm" class="form-control">
+                    <div class="invalid-feedback">Passwords do not match.</div>
+                </div>
+
+                <button type="submit" class="btn-anime">Register</button>
+            </form>
+
+            <div id="formAlert" class="alert mt-4" style="display: none;"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>AniVerse · Student fan project</p>
+        <p>Authors: Zh.Aktilek B.Alibek A.Meiirkhan</p>
+        <p class="credits">AI assistance: ChatGPT helped with code, documentation and testing. Team members are responsible for understanding and reviewing the project. Artwork belongs to its respective owners.</p>
+    </footer>
+
+    <script src="vendor/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/final.js"></script>
+
+</body>
+</html>

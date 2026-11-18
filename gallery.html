@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniVerse - Gallery</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/final.css">
+</head>
+<body>
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpg" alt="AniVerse logo">
+            <span>AniVerse</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="anime.html">Anime</a>
+            <a href="manga.html">Manga</a>
+            <a href="top.html">Top</a>
+            <a href="gallery.html" class="active" aria-current="page">Gallery</a>
+            <a href="register.html">Register</a>
+        </nav>
+        <div class="header-actions"><button id="themeToggle" type="button" class="utility-btn">☀ Light</button><a href="signin.html" id="signInLink" class="utility-btn">Sign in</a><span id="userName"></span><button id="signOut" type="button" class="utility-btn" hidden>Sign out</button></div>
+    </header>
+    <p id="siteNotice" class="site-notice" role="status"></p>
+
+    <main id="mainContent">
+        <div class="container">
+            <h1 class="title">Gallery</h1>
+            <p class="mb-4">Move the mouse on a picture to see the name. Click a picture to open it.</p>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/one-piece.jpg" alt="One Piece">
+                    <p class="caption">One Piece</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/naruto.jpg" alt="Naruto">
+                    <p class="caption">Naruto</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/jujutsu-kaisen.jpg" alt="Jujutsu Kaisen">
+                    <p class="caption">Jujutsu Kaisen</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/attack-on-titan.jpg" alt="Attack on Titan">
+                    <p class="caption">Attack on Titan</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/haikyuu-2.jpg" alt="Haikyuu!!">
+                    <p class="caption">Haikyuu!!</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/vinland-saga-2.jpg" alt="Vinland Saga">
+                    <p class="caption">Vinland Saga</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/solo-leveling.jpg" alt="Solo Leveling">
+                    <p class="caption">Solo Leveling</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/blue-lock.jpg" alt="Blue Lock">
+                    <p class="caption">Blue Lock</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/hunter-x-hunter.jpg" alt="Hunter x Hunter">
+                    <p class="caption">Hunter x Hunter</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Poster viewer">
+        <button type="button" id="closeBtn" class="lightbox-close" aria-label="Close poster">&times;</button>
+        <button type="button" id="prevBtn" class="lightbox-arrow left" aria-label="Previous poster">&#10094;</button>
+        <img id="lightboxImg" src="" alt="">
+        <button type="button" id="nextBtn" class="lightbox-arrow right" aria-label="Next poster">&#10095;</button>
+        <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+
+    <footer class="footer">
+        <p>AniVerse · Student fan project</p>
+        <p>Authors: Zh.Aktilek B.Alibek A.Meiirkhan</p>
+        <p class="credits">AI assistance: ChatGPT helped with code, documentation and testing. Team members are responsible for understanding and reviewing the project. Artwork belongs to its respective owners.</p>
+    </footer>
+
+    <script src="vendor/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/final.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniVerse - Sign in</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/final.css">
+</head>
+<body>
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpg" alt="AniVerse logo">
+            <span>AniVerse</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="anime.html">Anime</a>
+            <a href="manga.html">Manga</a>
+            <a href="top.html">Top</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="register.html">Register</a>
+        </nav>
+        <div class="header-actions"><button id="themeToggle" type="button" class="utility-btn">☀ Light</button><a href="signin.html" id="signInLink" class="utility-btn">Sign in</a><span id="userName"></span><button id="signOut" type="button" class="utility-btn" hidden>Sign out</button></div>
+    </header>
+    <p id="siteNotice" class="site-notice" role="status"></p>
+
+    <main id="mainContent"><div class="container account-layout">
+        <section><p class="eyebrow">YOUR ANIVERSE</p><h1 class="title">Welcome back</h1>
+        <p id="memberWelcome"></p>
+        <p>This is a classroom demo sign-in. Enter your name and email to personalise this browser. No password is collected, and no server account is created.</p>
+        <a href="top.html" class="text-link">Open my watchlist →</a></section>
+        <section class="form-box"><h2>Sign in</h2>
+        <form id="loginForm">
+            <label for="displayName" class="form-label">Display name</label>
+            <input id="displayName" name="displayName" class="form-control mb-3" required minlength="2" maxlength="50" autocomplete="nickname">
+            <label for="loginEmail" class="form-label">Email</label>
+            <input id="loginEmail" name="loginEmail" type="email" class="form-control mb-3" required maxlength="254" autocomplete="email">
+            <button type="submit" class="btn-anime">Sign in</button>
+            <p id="loginStatus" role="status" class="mt-3"></p>
+        </form></section>
+    </div></main>
+
+    <footer class="footer">
+        <p>AniVerse · Student fan project</p>
+        <p>Authors: Zh.Aktilek B.Alibek A.Meiirkhan</p>
+        <p class="credits">AI assistance: ChatGPT helped with code, documentation and testing. Team members are responsible for understanding and reviewing the project. Artwork belongs to its respective owners.</p>
+    </footer>
+
+    <script src="vendor/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/final.js"></script>
+
+</body>
+</html>

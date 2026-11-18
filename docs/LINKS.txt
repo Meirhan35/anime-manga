@@ -1,0 +1,7 @@
+GitHub repository: https://github.com/Meirhan35/anime-manga
+Original Endterm repository: https://github.com/Tilya1/Midterm-WEB
+GitHub Pages address after enabling Pages: https://meirhan35.github.io/anime-manga/
+Local website: http://127.0.0.1:5500/
+API documentation: https://kitsu.docs.apiary.io/
+
+Enable GitHub Pages from main/root in repository Settings > Pages.

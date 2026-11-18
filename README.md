@@ -128,5 +128,3 @@ docs/
 tests/
 README.md
 ```
-
-

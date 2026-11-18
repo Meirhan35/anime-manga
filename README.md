@@ -130,4 +130,3 @@ README.md
 ```
 
 
-AniVerse is a fan information website and does not host episodes or manga chapters.

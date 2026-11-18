@@ -50,7 +50,6 @@ h2 { margin-bottom:22px; font-size:28px; letter-spacing:-.6px; }
 .table-responsive+.title { margin-top:40px; }
 .footer { background:var(--header); border-top:1px solid var(--border); color:var(--muted); font-size:14px; }
 .footer p { margin-bottom:8px; }
-.credits { max-width:780px; margin:20px auto 0; font-size:12px; line-height:1.7; }
 .site-notice { margin:0; text-align:center; color:var(--accent); }
 .site-notice:not(:empty) { padding:12px; border-bottom:1px solid var(--border); }
 .member-welcome { margin-bottom:25px; color:var(--muted); }

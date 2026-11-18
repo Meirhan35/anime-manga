@@ -10,7 +10,7 @@ Hello. Our project is AniVerse, a website for anime and manga fans. We continued
 
 ### Alibek 60 to 120 seconds
 
-The Anime page has two ways to find anime. The curated catalogue uses local search and genre filters. Discover uses a real public API called Kitsu. I enter Naruto and choose TV series. JavaScript builds the URL with URLSearchParams and sends a GET request with fetch. We check response.ok, parse the JSON and create cards with titles, posters, ratings and descriptions. The rating is out of 100. We show loading, empty results and error messages. The request has a timeout and repeated searches use a temporary cache. The API needs an internet connection. It returns information about anime, not full episodes.
+The Anime page has two ways to find anime. The curated catalogue uses local search and genre filters. Discover uses a real public API called Kitsu. I enter Naruto and choose TV series. JavaScript builds the URL with URLSearchParams and sends a GET request with fetch. We check response.ok, parse the JSON and create cards with titles, posters, ratings and descriptions. The rating is out of 100. We show loading, empty results and error messages. The request has a timeout and repeated searches use a temporary cache. The API needs an internet connection. It returns titles, posters, ratings and descriptions.
 
 ### Meiirkhan 120 to 180 seconds
 
